@@ -26,12 +26,12 @@ public class Employees_Chapter04 {
     	  statement = con.createStatement();
     	  
     	  //既存テーブル削除
-    	  String sqlDrop = "DROP TABLE IF EXISTS users";
+    	  String sqlDrop = "DROP TABLE IF EXISTS employees";
     	  statement.executeUpdate(sqlDrop);
     	  
     	  //テーブル作成
     	  String sqlCreate = """
-    	  		       CREATE TABLE users (
+    	  		       CREATE TABLE employees (
     	  		        id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     	  		        name VARCHAR(60) NOT NULL,
     	  		        email VARCHAR(255) NOT NULL,
